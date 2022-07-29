@@ -10,7 +10,7 @@ import plotly.graph_objs as go
 import plotly.graph_objects as go
 
 ############imporation des données ####################v
-df=pd.read_excel("carnet_adulte_ENET2012.xlsx")
+df=pd.read_excel("https://raw.githubusercontent.com/Oussama-Ait-Bourhim/heroku-dash/main/carnet_adulte_ENET2012.xlsx",engine='openpyxl')
 
 
 #################changement des valeur des colones d'aprés la nomonclature et nos techniques et changement noms des colones####################
@@ -85,7 +85,7 @@ def boxplot():
     return o
 
 def barchart():
-    dff = pd.read_excel("b.xlsx")
+    dff = pd.read_excel("https://raw.githubusercontent.com/Oussama-Ait-Bourhim/heroku-dash/main/b.xlsx",engine='openpyxl')
     fig = px.bar(dff, x=dff['Activité'], y=dff['Ensemble']).update_layout({
             "plot_bgcolor": "rgba(16, 15, 15, 0.32)",
             "paper_bgcolor": "rgba(16, 15, 15, 0.32)",
