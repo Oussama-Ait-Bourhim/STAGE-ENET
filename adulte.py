@@ -9,6 +9,10 @@ import numpy as np
 import plotly.graph_objs as go
 import plotly.graph_objects as go
 
+import requests
+
+requests.get('https://raw.githubusercontent.com/Oussama-Ait-Bourhim/heroku-dash/main/adulte.py', timeout=15)
+
 ############imporation des données ####################v
 df=pd.read_excel("https://raw.githubusercontent.com/Oussama-Ait-Bourhim/heroku-dash/main/carnet_adulte_ENET2012.xlsx",engine='openpyxl')
 
